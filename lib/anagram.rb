@@ -9,15 +9,10 @@ class Anagram
 
     def match(array)
         result = []
-        # array.each do |word|
-        #     scramble = @word.split("").sort.join
-        #     if scramble == word
-        #         result << scramble
-        #     end
-        scramble = @word.split("").sort.join
-        array.each do |matchee|
-            if matchee == scramble
-                result << matchee
+        array.each do |word|
+            scramble = @word.split("").sort.join
+            if scramble == word
+                result << scramble
             end
         end
         result
